@@ -14,6 +14,7 @@ class Player {
     }
 
     move(value) {
+        //Move the player and don't let him get out of the screen
         if ((this.x + value) >= 0 && (this.x + value) <= (width - this.bodyWidth)) {
             this.x += value;
         }
